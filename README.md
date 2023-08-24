@@ -1,12 +1,9 @@
 # Jenkins Pipeline to Build Docker Image
+## Run following commands on Linux Azure VM before running the pipeline
 
 
 ``` shell
-docker images
-docker image build -t ubuntu:flask .
-docker run -d --hostname webserv1 --name webserv1 -p 80:5000 ubuntu:flask
-docker exec webserv1 ps
-curl localhost
+sudo chmod 777 <jenkins workspace path>
+sudo usermod -a -G docker jenkins
+sudo systemctl restart jenkins
 ```
-
-docker image build -t ubuntu:dbot .
