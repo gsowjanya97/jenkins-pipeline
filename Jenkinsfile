@@ -4,14 +4,14 @@ pipeline{
     stages {
         stage("Build") {
             steps {
-                docker image build -t ubuntu:flask .
+                sh '''docker image build -t ubuntu:flask .
                 docker run -d --hostname webserv1 --name webserv1 -p 80:5000 ubuntu:flask
-                docker exec webserv1 ps
+                docker exec webserv1 ps'''
             }
         }
 
         stage("Test") {
-            curl -v localhost
+            sh 'curl -v localhost'
         }
     }
 }
