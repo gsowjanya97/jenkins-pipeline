@@ -11,7 +11,7 @@ pipeline{
         }
 
         stage("Test") {
-            curl localhost
+            curl -v localhost
         }
     }
 }
