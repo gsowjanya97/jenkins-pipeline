@@ -1,7 +1,4 @@
-# Docker Labs - Docker Networks -  Lab 5
-
-These labs should be following along the video:
-
+# Jenkins Pipeline to Build Docker Image
 
 
 ``` shell
