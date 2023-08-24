@@ -1,5 +1,5 @@
 # Jenkins Pipeline to Build Docker Image
-## Run following commands on Linux Azure VM before running the pipeline
+#### Run the following commands on Azure VM before running the pipeline
 
 
 ``` shell
